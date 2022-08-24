@@ -6,29 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Club del Bourbon</title>
     <link rel="shortcut icon" href="img/Logo CB 1.jpg" type="image/x-icon" />
-
     <link rel="stylesheet" href="css/estilo.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
-  <body>
-    <header>
+  <body class="bg-black">
+    <header class="container-fluid">
       <h1>El Club del Bourbon</h1>
-      <nav>
+      <nav class="nav">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="./html/multimedia.html">El Bourbon</a></li>
-          <li><a href="./html/elclub.html">El Club</a></li>
-          <li><a href="./html/delicatessen.html">Delicatessen</a></li>
-          <li><a href="./html/contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link  text-white" href="./html/multimedia.html">El Bourbon</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./html/elclub.html">El Club</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./html/delicatessen.html">Delicatessen</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./html/contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
 
 
-    <main class="contenedor">
+    <main class="container bg-black">
 
         
-      <p class="parrafo">
+      <p class="parrafo pt-5 pb-4 text-start fs-4 row">
         El Club Bourbon es el club de licores más exclusivo del mundo, limitado
         a solo 9999 miembros globales. Los beneficios siempre están mejorando,
         pero actualmente incluyen:.
@@ -58,9 +58,9 @@
           marcas, barriles, etc.)
         </li>
       </ul>
-      <p>Nuestra selección de los 7 mejores Bourbon de 2022</p>
+      <p class="fs-5 pt-3 row">Nuestra selección de los 7 mejores Bourbon de 2022</p>
 
-      <ol>
+      <ol class="ms-2 ps-5 ">
         <li>Jim Beam Single Barrel Kentucky Bourbon.</li>
         <li>Makers Mark Kentucky Bourbon Whisky 46.</li>
         <li>Four Roses Whisky Small Batch.</li>
@@ -69,16 +69,17 @@
         <li>Bulleit Bourbon Frontier.</li>
         <li>Maker´s Mark Kentucky Bourbon.</li>
       </ol>
-
-      <h2>Conseguí los mejores Bourbon en:</h2>
-      <a href="https://whiskypedia.com.ar/" target="blank">Wiskypedia</a>
+      <div class="d-flex align-items-center mt-5 ">
+        <h2>Conseguí los mejores Bourbon en:</h2>
+        <a class="ms-3"  href="https://whiskypedia.com.ar/" target="blank">Wiskypedia</a>
+      </div>
     </main>
 
 
 
-    <footer>
-      <h3>Redes Sociales</h3>
-      <h3>
+    <footer class="mt-5 container mb-5">
+      <h3 class="row">Redes Sociales</h3>
+      <h3 class="row">
         Sitio web creado por Milton Cassano - Todos los derechos reservados
       </h3>
     
@@ -87,5 +88,6 @@
       <p>Whatsapp</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>

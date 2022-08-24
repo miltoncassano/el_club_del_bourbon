@@ -18,12 +18,12 @@ footer {
 }
 
 nav {
-  color: burlywood;
+  color: burlywood !important;
 }
 
 body {
   background-color: #010101;
-  color: rgb(189, 171, 148);
+  color: rgb(189, 171, 148) !important;
 }
 
 header {
@@ -48,7 +48,7 @@ iframe {
 
   font-weight: bold;
 
-  font-family: "Acme", sans-serif;
+  font-family: "Acme", sans-serif !important;
 
   line-height: 1.6;
 }
@@ -60,6 +60,9 @@ ul {
 li{
   font-size: 15px;
   padding: 8px 0 8px 0;
+}
+a:hover{
+  color:burlywood !important
 }
 
 .contenedor {
