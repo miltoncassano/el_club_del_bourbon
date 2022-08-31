@@ -1,153 +1,129 @@
+@charset "UTF-8";
 h1 {
   color: burlywood;
   text-align: start;
   padding: 20px 0 0 40px;
   font-size: 60px;
-  margin-top: 0px;
-}
+  margin-top: 0px; }
 
 a {
   text-decoration: none;
   text-transform: uppercase;
   list-style: none;
-  color: rgb(189, 171, 148)
-}
+  color: color-secundario; }
+  a:hover {
+    color: burlywood !important; }
 
 footer {
   color: brown;
-}
+  padding-left: 2rem; }
 
 nav {
-  color: burlywood !important;
-}
+  color: burlywood !important; }
+  nav ul {
+    font-family: "Acme", sans-serif;
+    list-style: none; }
+    nav ul li {
+      font-size: 15px;
+      padding: 8px 0 8px 0; }
 
 body {
   background-color: #010101;
-  color: rgb(189, 171, 148) !important;
-}
+  color: #bdab94 !important; }
 
 header {
   background-image: url("https://www.distillerie-guillon.com/themes/axecibles/img/fond_finition.jpg");
   padding: 1rem 1rem 3rem 1rem;
   background-position: right;
   height: 400px;
-  background-size: cover;
-}
+  background-size: cover; }
+
 img {
-  height: 200px;
-}
+  height: 200px; }
 
 iframe {
   padding-left: 2rem;
   margin-left: 300px;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .parrafo {
   text-align: center;
-
   font-weight: bold;
-
   font-family: "Acme", sans-serif !important;
-
-  line-height: 1.6;
-}
+  line-height: 1.6; }
 
 ul {
-  font-family: sans-serif;
-  list-style: none;
-}
-li{
+  font-family: "Acme", sans-serif;
+  list-style: none; }
+
+li {
   font-size: 15px;
-  padding: 8px 0 8px 0;
-}
-a:hover{
-  color:burlywood !important
-}
+  padding: 8px 0 8px 0; }
 
 .contenedor {
-  border: 1px solid black;
+  border: 1px solid #010101;
   margin: 40px;
-  padding: 50px;
-}
+  padding: 50px; }
 
 .whatsapp {
   position: fixed;
   bottom: 20px;
-  right: 20px;
-}
+  right: 20px; }
 
 form {
   padding-left: 2rem;
   margin-top: 50px;
-  margin-bottom:300px;
-}
-
-footer {
-  padding-left: 2rem;
-}
+  margin-bottom: 300px; }
 
 .item {
   background-color: #010101;
-  border: 1px black solid;
+  border: 1px #010101 solid; }
+  .item p {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
 
-}
-
-.item p {
+p {
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
-}
-.contenedor-preguntas{
+  text-transform: uppercase; }
+
+.contenedor-preguntas {
   display: flex;
   gap: 2rem;
-  margin: 1rem 2rem 1rem 2rem;
-}
-.contenedor-preguntas p{
-  width: 25%;
-  border: 1px rgb(189, 171, 148) solid;
-  padding: 1rem;
-}
+  margin: 1rem 2rem 1rem 2rem; }
+  .contenedor-preguntas p {
+    width: 25%;
+    border: 1px #bdab94 solid;
+    padding: 1rem; }
 
-.titulo-preguntas{
+.titulo-preguntas {
   display: block;
   text-align: center;
-  margin-top: 2rem;
-}
+  margin-top: 2rem; }
 
 /*GRID*/
 /*CONTENEDOR PADRE*/
-
-.vaso:hover{
-  transform: scale(1.2);
-}
+.vaso:hover {
+  transform: scale(1.2); }
 
 .gridPadre {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   /*AUTO: Ocupa todo el espacio disponible... se puede usar fracciones (fr) y pixel (px) tambien*/
   /*REPEAT: repite una configuración... EJ: grid-template-columns: repeat(6, 1fr) --> 6 columnas de 1 fracción */
-
   column-gap: 15px;
   row-gap: 30px;
-  padding: 2rem 2rem 0 5rem;
-  /*CON LA PROPIEDAD GAP (solo se utiliza en Grid) SE PUEDEN MODIFICAR AMBOS VALORES... Ej: gap: 15px 30px*/
+  padding: 2rem 2rem 0 5rem; }
 
+/*CON LA PROPIEDAD GAP (solo se utiliza en Grid) SE PUEDEN MODIFICAR AMBOS VALORES... Ej: gap: 15px 30px*/
 /*PROPIEDADES QUE NO SE VAN A USAR NUNCA*/
 /*Posición de los items hijos desde el padre*/
-
 /*justify-items*/
 /*DIstribuye los elementos en el eje horizontal*/
 /*Valores: start, end, center, stretch*/
-
 /*Aling-items*/
 /*Distribuye lso elementos en el eje vertical*/
 /*Valores: start, end, center, stretch*/
-
-
-
-
-
-}
-
