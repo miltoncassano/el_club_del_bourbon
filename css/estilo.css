@@ -1,4 +1,3 @@
-@charset "UTF-8";
 h1 {
   color: burlywood;
   text-align: start;
@@ -70,6 +69,12 @@ form {
   margin-top: 50px;
   margin-bottom: 300px; }
 
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase; }
+
 .item {
   background-color: #010101;
   border: 1px #010101 solid; }
@@ -78,12 +83,6 @@ form {
     font-weight: bold;
     text-align: center;
     text-transform: center; }
-
-p {
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase; }
 
 .contenedor-preguntas {
   display: flex;
@@ -123,26 +122,12 @@ p {
   text-align: center;
   margin-top: 2rem; }
 
-/*GRID*/
-/*CONTENEDOR PADRE*/
 .vaso:hover {
   transform: scale(1.2); }
 
 .gridPadre {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  /*AUTO: Ocupa todo el espacio disponible... se puede usar fracciones (fr) y pixel (px) tambien*/
-  /*REPEAT: repite una configuración... EJ: grid-template-columns: repeat(6, 1fr) --> 6 columnas de 1 fracción */
   column-gap: 15px;
   row-gap: 30px;
   padding: 2rem 2rem 0 5rem; }
-
-/*CON LA PROPIEDAD GAP (solo se utiliza en Grid) SE PUEDEN MODIFICAR AMBOS VALORES... Ej: gap: 15px 30px*/
-/*PROPIEDADES QUE NO SE VAN A USAR NUNCA*/
-/*Posición de los items hijos desde el padre*/
-/*justify-items*/
-/*DIstribuye los elementos en el eje horizontal*/
-/*Valores: start, end, center, stretch*/
-/*Aling-items*/
-/*Distribuye lso elementos en el eje vertical*/
-/*Valores: start, end, center, stretch*/

@@ -1,20 +1,7 @@
-//Variables
-$color-primario:burlywood;
-$color-secundario:rgb(189, 171, 148);
-$color-negro:#010101;
-$fuente-principal:"Acme", sans-serif;
-//mapa
-$estilo-titulo-secundario:(
-    color:$color-secundario,
-    alineacion:center,
-    uppercase:uppercase,
-    tamaño-titulo:2rem,
-    tamaño-parrafo:1rem
-);
-@mixin sizes($width,$height){
-    width: $width;
-    height: $height;
-}
+@import "./utilities/mixins";
+@import "./utilities/colores";
+@import "./utilities/maps";
+@import "./utilities/fuentes";
 
 h1 {
 color: $color-primario;
@@ -30,7 +17,7 @@ text-transform: uppercase;
 list-style: none;
 color: color-secundario;
     &:hover{
-    color:$color-primario !important
+    color:$color-primario !important //Se utiliza !important para pisar estilo que viene de bootstrap
     }
 }
 
@@ -40,7 +27,7 @@ padding-left: 2rem;
 }
 
 nav {
-color: $color-primario !important;
+color: $color-primario !important; //Se utiliza !important para pisar estilo que viene de bootstrap
     ul {
         font-family: $fuente-principal;
         list-style: none;
@@ -53,7 +40,7 @@ color: $color-primario !important;
 
 body {
 background-color: $color-negro;
-color: $color-secundario !important;
+color: $color-secundario !important; //Se utiliza !important para pisar estilo que viene de bootstrap
 }
 
 header {
@@ -73,8 +60,6 @@ padding-left: 2rem;
 margin-left: 300px;
 margin-top: 20px;
 }
-
-
 
 ul {
 font-family: $fuente-principal;
@@ -104,6 +89,12 @@ margin-top: 50px;
 margin-bottom:300px;
 }
 
+p {
+font-size: map-get($estilo-titulo-secundario, tamaño-parrafo);
+font-weight: bold;
+text-align: map-get($estilo-titulo-secundario, alineacion);
+text-transform: uppercase;
+}
 .item {
 background-color: $color-negro;
 border: 1px $color-negro solid;
@@ -115,13 +106,6 @@ border: 1px $color-negro solid;
     }
 }
 
-
-p {
-font-size: map-get($estilo-titulo-secundario, tamaño-parrafo);
-font-weight: bold;
-text-align: map-get($estilo-titulo-secundario, alineacion);
-text-transform: uppercase;
-}
 .contenedor-preguntas{
 display: flex;
 gap: 2rem;
@@ -165,8 +149,6 @@ text-align: center;
 margin-top: 2rem;
 }
 
-/*GRID*/
-/*CONTENEDOR PADRE*/
 
 .vaso:hover{
 transform: scale(1.2);
@@ -175,26 +157,7 @@ transform: scale(1.2);
 .gridPadre {
 display: grid;
 grid-template-columns: 33% 33% 33%;
-/*AUTO: Ocupa todo el espacio disponible... se puede usar fracciones (fr) y pixel (px) tambien*/
-/*REPEAT: repite una configuración... EJ: grid-template-columns: repeat(6, 1fr) --> 6 columnas de 1 fracción */
 column-gap: 15px;
 row-gap: 30px;
 padding: 2rem 2rem 0 5rem;
 }
-    /*CON LA PROPIEDAD GAP (solo se utiliza en Grid) SE PUEDEN MODIFICAR AMBOS VALORES... Ej: gap: 15px 30px*/
-  
-  /*PROPIEDADES QUE NO SE VAN A USAR NUNCA*/
-  /*Posición de los items hijos desde el padre*/
-  
-  /*justify-items*/
-  /*DIstribuye los elementos en el eje horizontal*/
-  /*Valores: start, end, center, stretch*/
-  
-  /*Aling-items*/
-  /*Distribuye lso elementos en el eje vertical*/
-  /*Valores: start, end, center, stretch*/
-  
-  
-  
-  
-  
