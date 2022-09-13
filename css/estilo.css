@@ -39,6 +39,7 @@ header {
   background-size: cover; }
 
 img {
+  width: 200px;
   height: 200px; }
 
 iframe {
@@ -46,18 +47,12 @@ iframe {
   margin-left: 300px;
   margin-top: 20px; }
 
-.parrafo {
-  text-align: center;
-  font-weight: bold;
-  font-family: "Acme", sans-serif !important;
-  line-height: 1.6; }
-
 ul {
   font-family: "Acme", sans-serif;
   list-style: none; }
 
 li {
-  font-size: 15px;
+  font-size: 1rem;
   padding: 8px 0 8px 0; }
 
 .contenedor {
@@ -82,10 +77,10 @@ form {
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: center; }
 
 p {
-  font-size: 4rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase; }
@@ -96,8 +91,32 @@ p {
   margin: 1rem 2rem 1rem 2rem; }
   .contenedor-preguntas p {
     width: 25%;
+    height: 300px;
+    overflow: scroll;
     border: 1px #bdab94 solid;
     padding: 1rem; }
+
+.boton, .boton--enviar, .boton--reestablecer {
+  background-color: #010101;
+  width: 30%;
+  color: burlywood;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin: 0 10px 0 10px; }
+
+.boton:hover, .boton--enviar:hover, .boton--reestablecer:hover {
+  color: #bdab94;
+  transform: scale(1.1); }
+
+.boton--enviar {
+  background-color: blue; }
+
+.boton--reestablecer {
+  background-color: #f0aa7c;
+  color: black; }
+
+.boton--reestablecer:hover {
+  color: black; }
 
 .titulo-preguntas {
   display: block;

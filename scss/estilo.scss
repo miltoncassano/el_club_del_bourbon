@@ -3,6 +3,18 @@ $color-primario:burlywood;
 $color-secundario:rgb(189, 171, 148);
 $color-negro:#010101;
 $fuente-principal:"Acme", sans-serif;
+//mapa
+$estilo-titulo-secundario:(
+    color:$color-secundario,
+    alineacion:center,
+    uppercase:uppercase,
+    tamaño-titulo:2rem,
+    tamaño-parrafo:1rem
+);
+@mixin sizes($width,$height){
+    width: $width;
+    height: $height;
+}
 
 h1 {
 color: $color-primario;
@@ -52,7 +64,8 @@ height: 400px;
 background-size: cover;
 }
 img {
-height: 200px;
+    @include sizes(200px, 200px);
+    
 }
 
 iframe {
@@ -61,12 +74,7 @@ margin-left: 300px;
 margin-top: 20px;
 }
 
-.parrafo {
-text-align: center;
-font-weight: bold;
-font-family: $fuente-principal !important;
-line-height: 1.6;
-}
+
 
 ul {
 font-family: $fuente-principal;
@@ -74,7 +82,7 @@ list-style: none;
     
 }
 li{
-    font-size: 15px;
+    font-size: map-get($estilo-titulo-secundario, tamaño-parrafo );
     padding: 8px 0 8px 0;
     }
 
@@ -103,14 +111,15 @@ border: 1px $color-negro solid;
         font-size: 4rem;
         font-weight: bold;
         text-align: center;
-        text-transform: uppercase;
+        text-transform: map-get($estilo-titulo-secundario, alineacion);
     }
 }
 
+
 p {
-font-size: 4rem;
+font-size: map-get($estilo-titulo-secundario, tamaño-parrafo);
 font-weight: bold;
-text-align: center;
+text-align: map-get($estilo-titulo-secundario, alineacion);
 text-transform: uppercase;
 }
 .contenedor-preguntas{
@@ -118,12 +127,37 @@ display: flex;
 gap: 2rem;
 margin: 1rem 2rem 1rem 2rem;
     p{
-        width: 25%;
-        border: 1px $color-secundario solid;
+        @include sizes(25%,300px);
+        overflow: scroll;
+        border: 1px map-get($estilo-titulo-secundario, color ) solid;
         padding: 1rem;
     }
 }
 
+.boton{
+    background-color: #010101;
+    width: 30%;
+    color: $color-primario;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin: 0 10px 0 10px;
+}
+.boton:hover{
+    color: $color-secundario;
+    transform: scale(1.1);
+}
+.boton--enviar{
+    @extend.boton;
+    background-color: blue;
+}
+.boton--reestablecer{
+    @extend.boton;
+    background-color: rgb(240, 170, 124);
+    color: black;
+}
+.boton--reestablecer:hover{
+    color: black;
+}
 
 .titulo-preguntas{
 display: block;
